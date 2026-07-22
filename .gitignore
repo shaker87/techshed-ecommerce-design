@@ -1,1 +1,19 @@
+# Local secrets — do not commit
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Dependencies
 node_modules
+
+# Build
+dist
+.vite
+
+# Logs / OS
+*.log
+.DS_Store
+
+# Firebase
+.firebase
