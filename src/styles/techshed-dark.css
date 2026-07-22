@@ -1,0 +1,204 @@
+/* TechShed home / storefront dark mode (toggle via html[data-theme="dark"]) */
+
+[data-theme="dark"] .app-shell.storefront {
+  --ts-page: #0d1117;
+  --ts-surface: #161b22;
+  --ts-surface-2: #21262d;
+  --ts-elevated: #1c2128;
+  --ts-text: #e6edf3;
+  --ts-muted: #8b949e;
+  --ts-border: #30363d;
+  --ts-accent: #8b5cf6;
+  --ts-price: #a371f7;
+  background-color: var(--ts-page);
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-sticky {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle {
+  background-color: var(--ts-surface);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle .logo-input,
+[data-theme="dark"] .app-shell.storefront .header-middle .logo-input .logo a {
+  color: var(--ts-text) !important;
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle .logo-input .search-input input {
+  background: var(--ts-surface-2);
+  color: var(--ts-text);
+  border: 1px solid var(--ts-border);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle .logo-input .search-input input::placeholder {
+  color: var(--ts-muted);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle .logo-input .search-input input:focus {
+  border-color: var(--ts-accent);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-middle-icon span,
+[data-theme="dark"] .app-shell.storefront .header-middle-icon a,
+[data-theme="dark"] .app-shell.storefront .header-middle-icon .theme-toggle-link {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-bottom {
+  background-color: var(--ts-elevated);
+  border-top: 1px solid var(--ts-border);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-bottom-menu ul li a {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .header-bottom-menu ul li a:hover {
+  color: var(--ts-accent);
+}
+
+/* Hero slider */
+[data-theme="dark"] .app-shell.storefront .site-slider {
+  position: relative;
+}
+
+[data-theme="dark"] .app-shell.storefront .site-slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(13, 17, 23, 0.82) 0%, rgba(13, 17, 23, 0.35) 55%, rgba(13, 17, 23, 0.2) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="dark"] .app-shell.storefront .site-slider .container {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .app-shell.storefront .site-slider .slider-content h1,
+[data-theme="dark"] .app-shell.storefront .site-slider .slider-content .get-more-text {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .site-slider .slider-content .shop-now-btn:hover {
+  background-color: var(--ts-surface-2);
+}
+
+/* Promo cards & why choose */
+[data-theme="dark"] .app-shell.storefront .section-bg,
+[data-theme="dark"] .app-shell.storefront .seller-bg,
+[data-theme="dark"] .app-shell.storefront .category-bg,
+[data-theme="dark"] .app-shell.storefront .brand-bg,
+[data-theme="dark"] .app-shell.storefront .best-price-bg {
+  background-color: var(--ts-surface);
+}
+
+[data-theme="dark"] .app-shell.storefront .choose-card p,
+[data-theme="dark"] .app-shell.storefront .seller-title h2,
+[data-theme="dark"] .app-shell.storefront .category-box h6 {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .sell-box-container {
+  background-color: var(--ts-surface);
+}
+
+[data-theme="dark"] .app-shell.storefront .sell-box {
+  border-color: var(--ts-border);
+  background-color: var(--ts-surface-2);
+}
+
+[data-theme="dark"] .app-shell.storefront .sell-box-content p {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .sell-box-content .price {
+  color: var(--ts-price);
+}
+
+[data-theme="dark"] .app-shell.storefront .brand-box {
+  border-color: var(--ts-border);
+  background-color: var(--ts-surface-2);
+}
+
+/* Best price & today special panels */
+[data-theme="dark"] .app-shell.storefront .best-price-content-wrapper,
+[data-theme="dark"] .app-shell.storefront .today-content-wrapper {
+  background: var(--ts-surface);
+}
+
+[data-theme="dark"] .app-shell.storefront .best-price-content .highlight-price,
+[data-theme="dark"] .app-shell.storefront .best-price-content h6,
+[data-theme="dark"] .app-shell.storefront .best-price-content p,
+[data-theme="dark"] .app-shell.storefront .today-content .highlight-today,
+[data-theme="dark"] .app-shell.storefront .today-content .p-name,
+[data-theme="dark"] .app-shell.storefront .today-content p {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .today-content h2 span {
+  color: var(--ts-price);
+}
+
+/* Newsletter — keep brand purple, tweak input */
+[data-theme="dark"] .app-shell.storefront .news-area-bg {
+  background-color: #5b21b6;
+}
+
+[data-theme="dark"] .app-shell.storefront .subscribe-input input {
+  background: var(--ts-surface);
+  color: var(--ts-text);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="dark"] .app-shell.storefront .subscribe-input input::placeholder {
+  color: var(--ts-muted);
+}
+
+[data-theme="dark"] .app-shell.storefront .subscribe-btn:hover {
+  background-color: var(--ts-surface-2);
+  color: var(--ts-text);
+}
+
+/* Help section */
+[data-theme="dark"] .app-shell.storefront .help-section-area-box {
+  background-color: #010409;
+}
+
+/* Footer */
+[data-theme="dark"] .app-shell.storefront .footer {
+  background-color: var(--ts-surface);
+}
+
+[data-theme="dark"] .app-shell.storefront .footer-top-box h3,
+[data-theme="dark"] .app-shell.storefront .footer-top-box ul li,
+[data-theme="dark"] .app-shell.storefront .footer-top-box ul li a,
+[data-theme="dark"] .app-shell.storefront .footer-text p,
+[data-theme="dark"] .app-shell.storefront .footer-copyright-text p {
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .footer .hr {
+  background-color: var(--ts-border);
+}
+
+[data-theme="dark"] .app-shell.storefront .footer-top-box ul li a:hover {
+  color: var(--ts-accent);
+}
+
+/* Auth pages inside storefront layout */
+[data-theme="dark"] .app-shell.storefront .auth-card {
+  background: var(--ts-surface);
+  border-color: var(--ts-border);
+  color: var(--ts-text);
+}
+
+[data-theme="dark"] .app-shell.storefront .auth-card input {
+  background: var(--ts-surface-2);
+  border-color: var(--ts-border);
+  color: var(--ts-text);
+}
