@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import "antd/dist/reset.css";
 import App from "./App";
+import "./firebase";
 import "./index.css";
 import "./styles/techshed-original.css";
 import "./styles/techshed-overrides.css";
