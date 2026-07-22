@@ -1,0 +1,377 @@
+/* Layout width + fixes for React storefront */
+.app-shell.storefront .header {
+  position: relative;
+  padding: 0;
+  backdrop-filter: none;
+  background: transparent;
+  z-index: auto;
+}
+
+.app-shell.storefront {
+  background-color: #edecec;
+}
+
+/* Logo row + category nav stay visible while scrolling */
+.app-shell.storefront .header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container-fluid {
+  width: 95%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-box {
+  position: relative;
+}
+
+.site-slider {
+  opacity: 1;
+}
+
+.shop-btn-1 {
+  background-color: #d72d2d;
+  color: #fff;
+}
+
+.shop-btn-2 {
+  background-color: #542e97;
+  color: #fff;
+}
+
+.header-middle-icon .theme-toggle-link {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+.header-middle-icon a {
+  color: #000;
+  text-decoration: none;
+}
+
+.storefront-auth-link {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Desktop: logo + search grouped; icons on the right */
+.app-shell.storefront .storefront-middle-row {
+  flex-wrap: nowrap;
+}
+
+.app-shell.storefront .header-middle .logo-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-shell.storefront .header-middle .logo-input .search-input {
+  flex: 1;
+  max-width: 420px;
+  min-width: 160px;
+}
+
+.app-shell.storefront .header-middle-icon {
+  float: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 12px;
+}
+
+.app-shell.storefront .header-middle-icon span {
+  margin-left: 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.app-shell.storefront .header-middle-icon span i {
+  margin-right: 6px;
+}
+
+.header-menu-toggle {
+  display: none;
+}
+
+.app-shell.storefront .header .header-top .row {
+  align-items: center;
+}
+
+.app-shell.storefront .header-middle .logo-input .search-input input {
+  padding-right: 76px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .custom-padding {
+    padding: 0 16px;
+  }
+
+  .header .header-top {
+    padding: 8px 16px;
+  }
+
+  .header .header-top .free-shipping-text span {
+    font-size: 12px;
+  }
+
+  .header .header-top .top-menu {
+    float: none;
+    text-align: right;
+  }
+
+  .header .header-top .top-menu li {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .app-shell.storefront .storefront-middle-row {
+    flex-wrap: wrap;
+    gap: 12px 0;
+  }
+
+  .app-shell.storefront .storefront-middle-left .logo-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app-shell.storefront .storefront-middle-left .logo {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .app-shell.storefront .storefront-middle-left .logo a {
+    margin-right: 24px;
+    font-size: 1.75rem;
+  }
+
+  .app-shell.storefront .header-middle .logo-input .search-input {
+    flex: 1;
+    width: auto;
+    max-width: none;
+    min-width: 140px;
+  }
+
+  .app-shell.storefront .storefront-middle-right .header-middle-icon {
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  .header-menu-toggle {
+    display: inline-block;
+  }
+
+  .app-shell.storefront #menu-btn {
+    display: inline-block;
+  }
+
+  .app-shell.storefront .header-middle-icon {
+    gap: 0 10px;
+  }
+
+  .header-action-item--hide-xs .header-action-label {
+    display: none;
+  }
+
+  .header-bottom .header-bottom-menu ul {
+    display: none;
+    padding: 0 0 12px;
+  }
+
+  .header-bottom--open .header-bottom-menu ul,
+  .header-bottom-menu.mobile-open ul {
+    display: block;
+  }
+
+  .header-bottom-menu ul li {
+    display: block;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .header-bottom-menu ul li a {
+    display: block;
+    padding: 12px 4px;
+  }
+
+  .header-action-item--hide-sm .header-action-label {
+    display: none;
+  }
+
+  .header-action-item--hide-sm .storefront-auth-link {
+    gap: 0;
+  }
+
+  .site-slider {
+    height: auto;
+    min-height: 420px;
+    padding: 48px 0;
+  }
+
+  .site-slider .slider-content h1 {
+    font-size: clamp(28px, 7vw, 48px);
+  }
+
+  .sell-box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-box-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+
+  .brand-box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .best-price-img-bg img,
+  .today-special-img-bg img {
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
+  }
+
+  .best-price-content-wrapper,
+  .today-content-wrapper {
+    position: relative;
+    width: 100%;
+    clip-path: none;
+    background: #fff;
+  }
+
+  .best-price-content,
+  .today-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 24px;
+  }
+
+  .best-price-red-box {
+    left: auto;
+    right: 8%;
+    transform: rotate(12deg);
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+
+  .help-section-area-box {
+    height: auto;
+    padding-bottom: 240px;
+  }
+
+  .help-section-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    clip-path: none;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    right: 0;
+  }
+
+  .seller,
+  .category,
+  .best-price,
+  .today-special,
+  .brand {
+    padding: 24px 16px;
+  }
+
+  .seller-bg,
+  .category-bg,
+  .brand-bg {
+    padding: 24px 16px;
+  }
+
+  .choose-card {
+    padding: 20px 16px;
+  }
+
+  .choose-card p {
+    font-size: 16px;
+  }
+
+  .payment-method {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .payment-method img {
+    max-width: 72px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .header-top .col-md-6:first-child {
+    display: none;
+  }
+
+  .header .header-top .top-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px 8px;
+  }
+
+  .app-shell.storefront .storefront-middle-left .logo-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .app-shell.storefront .storefront-middle-left .logo {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .app-shell.storefront .storefront-middle-left .search-input {
+    flex: 1 1 100%;
+    margin-top: 8px;
+  }
+
+  .header-middle-icon .header-action-label {
+    display: none;
+  }
+
+  .header-middle-icon span i {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .sell-box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-box-content h1 {
+    font-size: 32px;
+  }
+
+  .subscribe-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
